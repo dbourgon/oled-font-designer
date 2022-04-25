@@ -35,6 +35,7 @@ void MainWindow::update_hex( void )
     col0_data[5] = ui->pixel05->text().toInt();
     col0_data[6] = ui->pixel06->text().toInt();
     col0_data[7] = ui->pixel07->text().toInt();
+
     col1_data[0] = ui->pixel10->text().toInt();
     col1_data[1] = ui->pixel11->text().toInt();
     col1_data[2] = ui->pixel12->text().toInt();
@@ -44,6 +45,60 @@ void MainWindow::update_hex( void )
     col1_data[6] = ui->pixel16->text().toInt();
     col1_data[7] = ui->pixel17->text().toInt();
 
+    col2_data[0] = ui->pixel20->text().toInt();
+    col2_data[1] = ui->pixel21->text().toInt();
+    col2_data[2] = ui->pixel22->text().toInt();
+    col2_data[3] = ui->pixel23->text().toInt();
+    col2_data[4] = ui->pixel24->text().toInt();
+    col2_data[5] = ui->pixel25->text().toInt();
+    col2_data[6] = ui->pixel26->text().toInt();
+    col2_data[7] = ui->pixel27->text().toInt();
+
+    col3_data[0] = ui->pixel30->text().toInt();
+    col3_data[1] = ui->pixel31->text().toInt();
+    col3_data[2] = ui->pixel32->text().toInt();
+    col3_data[3] = ui->pixel33->text().toInt();
+    col3_data[4] = ui->pixel34->text().toInt();
+    col3_data[5] = ui->pixel35->text().toInt();
+    col3_data[6] = ui->pixel36->text().toInt();
+    col3_data[7] = ui->pixel37->text().toInt();
+
+    col4_data[0] = ui->pixel40->text().toInt();
+    col4_data[1] = ui->pixel41->text().toInt();
+    col4_data[2] = ui->pixel42->text().toInt();
+    col4_data[3] = ui->pixel43->text().toInt();
+    col4_data[4] = ui->pixel44->text().toInt();
+    col4_data[5] = ui->pixel45->text().toInt();
+    col4_data[6] = ui->pixel46->text().toInt();
+    col4_data[7] = ui->pixel47->text().toInt();
+
+    col5_data[0] = ui->pixel50->text().toInt();
+    col5_data[1] = ui->pixel51->text().toInt();
+    col5_data[2] = ui->pixel52->text().toInt();
+    col5_data[3] = ui->pixel53->text().toInt();
+    col5_data[4] = ui->pixel54->text().toInt();
+    col5_data[5] = ui->pixel55->text().toInt();
+    col5_data[6] = ui->pixel56->text().toInt();
+    col5_data[7] = ui->pixel57->text().toInt();
+
+    col6_data[0] = ui->pixel60->text().toInt();
+    col6_data[1] = ui->pixel61->text().toInt();
+    col6_data[2] = ui->pixel62->text().toInt();
+    col6_data[3] = ui->pixel63->text().toInt();
+    col6_data[4] = ui->pixel64->text().toInt();
+    col6_data[5] = ui->pixel65->text().toInt();
+    col6_data[6] = ui->pixel66->text().toInt();
+    col6_data[7] = ui->pixel67->text().toInt();
+
+    col7_data[0] = ui->pixel70->text().toInt();
+    col7_data[1] = ui->pixel71->text().toInt();
+    col7_data[2] = ui->pixel72->text().toInt();
+    col7_data[3] = ui->pixel73->text().toInt();
+    col7_data[4] = ui->pixel74->text().toInt();
+    col7_data[5] = ui->pixel75->text().toInt();
+    col7_data[6] = ui->pixel76->text().toInt();
+    col7_data[7] = ui->pixel77->text().toInt();
+
 
     for( int i = 0; i < 8; i++){
         if( col0_data[i] == 1 ){
@@ -52,7 +107,34 @@ void MainWindow::update_hex( void )
         if( col1_data[i] == 1 ){
             totals[1] += bnary[i];
         }
+        if( col2_data[i] == 1 ){
+            totals[2] += bnary[i];
+        }
+        if( col3_data[i] == 1 ){
+            totals[3] += bnary[i];
+        }
+        if( col4_data[i] == 1 ){
+            totals[4] += bnary[i];
+        }
+        if( col5_data[i] == 1 ){
+            totals[5] += bnary[i];
+        }
+        if( col6_data[i] == 1 ){
+            totals[6] += bnary[i];
+        }
+        if( col7_data[i] == 1 ){
+            totals[7] += bnary[i];
+        }
     }
+
+    ui->c0val->setText(QString::number(totals[0]).setNum(totals[0],16));
+    ui->c1val->setText(QString::number(totals[1]).setNum(totals[1],16));
+    ui->c2val->setText(QString::number(totals[2]).setNum(totals[2],16));
+    ui->c3val->setText(QString::number(totals[3]).setNum(totals[3],16));
+    ui->c4val->setText(QString::number(totals[4]).setNum(totals[4],16));
+    ui->c5val->setText(QString::number(totals[5]).setNum(totals[5],16));
+    ui->c6val->setText(QString::number(totals[6]).setNum(totals[6],16));
+    ui->c7val->setText(QString::number(totals[7]).setNum(totals[7],16));
 
 }
 

@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <iostream>
-#include <format>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
