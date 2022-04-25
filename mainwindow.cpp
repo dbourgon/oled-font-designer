@@ -27,6 +27,9 @@ void MainWindow::update_hex( void )
     int totals[8] = {0,0,0,0,0,0,0,0};
     int bnary[8] = {1,2,4,8,16,32,64,128};
 
+    QString CHex = "{";
+    QString PyHex = "[";
+
     col0_data[0] = ui->pixel00->text().toInt();
     col0_data[1] = ui->pixel01->text().toInt();
     col0_data[2] = ui->pixel02->text().toInt();
@@ -128,13 +131,39 @@ void MainWindow::update_hex( void )
     }
 
     ui->c0val->setText(QString::number(totals[0]).setNum(totals[0],16));
+    CHex.append("0x");
+    CHex.append(ui->c0val->text());
+    CHex.append(",");
     ui->c1val->setText(QString::number(totals[1]).setNum(totals[1],16));
+    CHex.append("0x");
+    CHex.append(ui->c1val->text());
+    CHex.append(",");
     ui->c2val->setText(QString::number(totals[2]).setNum(totals[2],16));
+    CHex.append("0x");
+    CHex.append(ui->c2val->text());
+    CHex.append(",");
     ui->c3val->setText(QString::number(totals[3]).setNum(totals[3],16));
+    CHex.append("0x");
+    CHex.append(ui->c3val->text());
+    CHex.append(",");
     ui->c4val->setText(QString::number(totals[4]).setNum(totals[4],16));
+    CHex.append("0x");
+    CHex.append(ui->c4val->text());
+    CHex.append(",");
     ui->c5val->setText(QString::number(totals[5]).setNum(totals[5],16));
+    CHex.append("0x");
+    CHex.append(ui->c5val->text());
+    CHex.append(",");
     ui->c6val->setText(QString::number(totals[6]).setNum(totals[6],16));
+    CHex.append("0x");
+    CHex.append(ui->c6val->text());
+    CHex.append(",");
     ui->c7val->setText(QString::number(totals[7]).setNum(totals[7],16));
+    CHex.append("0x");
+    CHex.append(ui->c7val->text());
+    CHex.append("}");
+
+    ui->cStyleArrayHex->setText(CHex);
 
 }
 

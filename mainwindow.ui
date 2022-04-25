@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>341</width>
-    <height>350</height>
+    <width>375</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +18,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>341</width>
-    <height>350</height>
+    <width>375</width>
+    <height>450</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>341</width>
-    <height>350</height>
+    <width>375</width>
+    <height>450</height>
    </size>
   </property>
   <property name="baseSize">
@@ -45,8 +45,8 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>20</y>
+      <x>80</x>
+      <y>10</y>
       <width>221</width>
       <height>221</height>
      </rect>
@@ -2263,8 +2263,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>250</y>
+      <x>40</x>
+      <y>240</y>
       <width>301</width>
       <height>51</height>
      </rect>
@@ -2296,13 +2296,33 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLineEdit" name="cStyleArrayHex">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>351</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pyStyleArrayHex">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>351</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>341</width>
+     <width>375</width>
      <height>20</height>
     </rect>
    </property>
