@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>375</width>
     <height>450</height>
+=======
+    <width>341</width>
+    <height>350</height>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,14 +23,24 @@
   </property>
   <property name="minimumSize">
    <size>
+<<<<<<< HEAD
     <width>375</width>
     <height>450</height>
+=======
+    <width>341</width>
+    <height>350</height>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
    </size>
   </property>
   <property name="maximumSize">
    <size>
+<<<<<<< HEAD
     <width>375</width>
     <height>450</height>
+=======
+    <width>341</width>
+    <height>350</height>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
    </size>
   </property>
   <property name="baseSize">
@@ -45,8 +60,13 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>80</x>
       <y>10</y>
+=======
+      <x>60</x>
+      <y>20</y>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
       <width>221</width>
       <height>221</height>
      </rect>
@@ -2263,8 +2283,13 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
       <x>40</x>
       <y>240</y>
+=======
+      <x>20</x>
+      <y>250</y>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
       <width>301</width>
       <height>51</height>
      </rect>
@@ -2296,6 +2321,7 @@
      </item>
     </layout>
    </widget>
+<<<<<<< HEAD
    <widget class="QLineEdit" name="cStyleArrayHex">
     <property name="geometry">
      <rect>
@@ -2316,13 +2342,19 @@
      </rect>
     </property>
    </widget>
+=======
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
+<<<<<<< HEAD
      <width>375</width>
+=======
+     <width>341</width>
+>>>>>>> c06150ade427d51bbe4c3d07399128715d00df2d
      <height>20</height>
     </rect>
    </property>
